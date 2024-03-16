@@ -1,5 +1,10 @@
 {
+  "name": "news-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run build"
+  },
   "dependencies": {
-    "axios": "^1.6.8"
+    "your-dependencies-here": "version-numbers"
   }
 }
