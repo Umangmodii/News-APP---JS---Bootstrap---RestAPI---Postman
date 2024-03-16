@@ -104,7 +104,14 @@
 
     async function fetchNews(query, page) {
     try {
-        const res = await fetch(`https://newsapi.org/v2/everything?q=${query}&pageSize=20&page=${page}&apiKey=517943cde04b4275b0d56636de665c1e`);
+        const res = await fetch(`https://newsapi.org/v2/everything?q=${query}&pageSize=20&page=${page}&apiKey=517943cde04b4275b0d56636de665c1e`, {
+  method: 'GET',
+  headers: {
+    'Upgrade': 'HTTP/2.0', // Adjust the protocol version as per API requirements
+    'Connection': 'Upgrade'
+  }
+});
+
         if (!res.ok) {
             throw new Error('Network response was not ok');
         }
