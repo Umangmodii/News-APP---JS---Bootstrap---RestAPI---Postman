@@ -2,7 +2,8 @@
   "name": "news-app",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm run build"
+    "build": "npm run build",
+    "start": "index.html"
   },
   "dependencies": {
     "express": "^4.17.2",
